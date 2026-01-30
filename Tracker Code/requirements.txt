@@ -1,0 +1,19 @@
+# Runtime dependencies for Screenshot Tracker
+# All packages must have macOS wheels available
+
+# HTTP requests and retry logic
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Screenshot capture (cross-platform)
+mss>=9.0.0
+Pillow>=10.0.0
+
+# System information
+psutil>=5.9.0
+
+# Timezone support
+pytz>=2023.3
+
+# Note: opencv-python-headless is NOT included as this app doesn't use OpenCV
+# If you need image processing beyond PIL, add: opencv-python-headless>=4.8.0
